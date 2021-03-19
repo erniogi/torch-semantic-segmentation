@@ -11,7 +11,7 @@ This repository includes:
 まあGyazoでいいか
 
 ## Instlation
-1. Install Docker
+1. Install Docker 
 FYI : See [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/). 
 
 2. Install torch-classifier 
