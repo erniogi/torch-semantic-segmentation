@@ -8,7 +8,7 @@ This repository includes:
 
 **Streamlit Semantic Segmentation Application**
 <insert image>
-
+まあGyazoでいいか
 
 ## Instlation
 1. Install Docker
