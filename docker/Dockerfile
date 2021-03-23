@@ -16,21 +16,6 @@ RUN apt-get update -qq && \
 		rm -rf /var/lib/apt/lists/* && \
 		rm -rf /var/cache/apk/
 
-# For jp_JP.UTF-8 and JST(Asia/Tokyo)
-ENV TZ Asia/Tokyo
-ENV LANG ja_JP.UTF-8
-ENV LANGUAGE ja_JP:en
-ENV LC_ALL ja_JP.UTF-8
-RUN apt-get update \
-  && apt-get install -y language-pack-ja tzdata \
-  && rm -rf /var/lib/apt/lists/* \
-  && update-locale LANG=ja_JP.UTF-8 LANGUAGE="ja_JP:ja" \
-  && echo "${TZ}" > /etc/timezone \
-  && rm /etc/localtime \
-  && ln -s /usr/share/zoneinfo/Asia/Tokyo /etc/localtime \
-  && dpkg-reconfigure -f noninteractive tzdata
-
-
 # pip install
 ENV WORK_PATH /workspace
 COPY requirements.txt $WORK_PATH/docker/
