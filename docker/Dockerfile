@@ -45,5 +45,11 @@ RUN addgroup --gid $GROUP_ID $USERNAME && \
     echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 USER $USERNAME
 
+#dotfiles
+ENV DOTFILES_PATH /home/${USERNAME}/dotfiles
+RUN git clone https://github.com/erniogi/dotfiles.git $DOTFILES_PATH
+RUN chown -R ${USERNAME}:${USERNAME} $DOTFILES_PATH \
+  && sudo sh $DOTFILES_PATH/init_docker.sh
+
 # set current dir
 WORKDIR /workspace
