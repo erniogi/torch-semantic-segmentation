@@ -38,13 +38,13 @@ sh exec.sh
 
 6. Setup
 ```bash
-python setup.py develop --user
+python3 setup.py develop --user
 ```
 
 # Usage
 ## Train
 ```bash
-python train.py --config ./configs/default.yml
+python3 train.py --config ./configs/default.yml
 ```
 ## Evaluation
 ```bash
