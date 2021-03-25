@@ -33,7 +33,7 @@ sh run.sh
 5. Exec Docker Container
 
 ```bash
-docker exec -it intern_khoshi_semantic_segmentation bash
+sh exec.sh
 ```
 
 6. Setup
