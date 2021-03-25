@@ -38,6 +38,21 @@ docker exec -it intern_khoshi_semantic_segmentation bash
 
 6. Setup
 ```bash
-python3 setup.py
+python setup.py develop --user
 ```
 
+# Usage
+## Train
+```bash
+python train.py --config ./configs/default.yml
+```
+## Evaluation
+```bash
+python3 train.py --config ./configs/default.yml --eval
+````
+
+## Streamlit Application
+```bash
+streamlit run app/app.py
+```
+You can now view your Streamlit app in your browser through loaclhost:8510.
