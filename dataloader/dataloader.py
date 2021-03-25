@@ -1,6 +1,6 @@
 """DataLoader class"""
 from typing import List
-from torch.utils.data import DataLoader
+from torch.utils.data import dataLoader
 from dataloader.utils import make_data_list
 from dataloader.transform import DataTransform
 from dataloader.dataset import Dataset
