@@ -55,4 +55,4 @@ python3 train.py --config ./configs/default.yml --eval
 ```bash
 streamlit run app/app.py
 ```
-You can now view your Streamlit app in your browser through loaclhost:8510.
+You can now view your Streamlit app in your browser through loaclhost.
