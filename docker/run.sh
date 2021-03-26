@@ -3,7 +3,7 @@ docker run \
   -dit \
   --gpus '"device=1"' \
   -v ~/torch-semantic-segmentation:/workspace \
-  -p 8884:8501 \
+  -p 8501:8501 \
   --name intern_khoshi_semantic_segmentation\
   --rm \
   --shm-size=256m \
