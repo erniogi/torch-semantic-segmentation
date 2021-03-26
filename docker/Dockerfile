@@ -24,16 +24,7 @@ RUN pip3 install -U pip
 RUN pip3 install ${PIP_OPTIONS} -r $WORK_PATH/docker/requirements.txt && \
 		pip3 install ${PIP_OPTIONS} -U setuptools
 
-# streamlit
-RUN mkdir -p /root/.streamlit
-RUN bash -c 'echo -e "\
-[general]\n\
-email = \"\"\n\
-" > /root/.streamlit/credentials.toml'
-RUN bash -c 'echo -e "\
-[server]\n\
-enableCORS = false\n\
-" > /root/.streamlit/config.toml'
+# port for streamlit
 EXPOSE 8501
 
 # duser setting
