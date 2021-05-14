@@ -16,7 +16,7 @@ This repository includes:
 
 2. Install torch-classifier 
 ```bash
-git clone https://https://github.com/erniogi/torch-semantic-segmentation.git
+git clone https://github.com/erniogi/torch-semantic-segmentation.git
 ```
  
 3. Build Docker image 
